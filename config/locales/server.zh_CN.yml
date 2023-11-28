@@ -137,8 +137,8 @@ zh_CN:
         inactive_user_error: "当发件人不活跃时，就会发生这种情况。"
         silenced_user_error: "当发件人被禁言时，就会发生这种情况。"
         bad_destination_address: "当“收件人/抄送”字段中的电子邮件地址均不与已配置的传入电子邮件地址匹配时，就会发生这种情况。"
-        strangers_not_allowed_error: "当用户尝试在他们不属于的板块中创建新话题时，就会发生这种情况。"
-        insufficient_trust_level_error: "当用户尝试在他们没有所需信任级别的板块中创建新话题时，就会发生这种情况。"
+        strangers_not_allowed_error: "当用户尝试在他们不属于的版块中创建新话题时，就会发生这种情况。"
+        insufficient_trust_level_error: "当用户尝试在他们没有所需信任级别的版块中创建新话题时，就会发生这种情况。"
         reply_user_not_matching_error: "当回复来自与通知发送到的电子邮件地址不同的电子邮件地址时，就会发生这种情况。"
         topic_not_found_error: "当收到回复但相关话题已被删除时，就会发生这种情况。"
         topic_closed_error: "当收到回复但相关话题已被关闭时，就会发生这种情况。"
@@ -202,10 +202,10 @@ zh_CN:
       load_from_remote: "加载该帖子时出错。"
     site_settings:
       invalid_site_setting: "不存在名为 '%{name}' 的设置"
-      invalid_category_id: "您指定了一个不存在的板块"
+      invalid_category_id: "您指定了一个不存在的版块"
       invalid_choice:
         other: "'%{name}' 是无效的选择。"
-      default_categories_already_selected: "您不能选择其他列表中使用的板块。"
+      default_categories_already_selected: "您不能选择其他列表中使用的版块。"
       default_tags_already_selected: "您不能选择在另一个列表中使用的标签。"
       s3_upload_bucket_is_required: "除非提供 's3_upload_bucket'，否则您无法启用上传到 S3。"
       enable_s3_uploads_is_required: "除非已启用 S3 上传，否则您无法启用 S3 清单使用情况。"
@@ -305,7 +305,7 @@ zh_CN:
   invalid_whisper_access: "没有启用密语或者您无权创建密语帖子"
   not_in_group:
     title_topic: "您需要请求加入 `%{group}` 群组才能查看此话题。"
-    title_category: "您需要请求加入 `%{group}` 群组才能查看此板块。"
+    title_category: "您需要请求加入 `%{group}` 群组才能查看此版块。"
     request_membership: "请求成员资格"
     join_group: "加入群组"
   deleted_topic: "糟糕！此话题已被删除且不再可用。"
@@ -376,9 +376,9 @@ zh_CN:
   prev_page: "← 上一页"
   page_num: "第 %{num} 页"
   home_title: "首页"
-  topics_in_category: "'%{category}' 板块中的话题"
+  topics_in_category: "'%{category}' 版块中的话题"
   rss_posts_in_topic: "'%{topic}' 的 RSS Feed"
-  rss_topics_in_category: "'%{category}' 板块中话题的 RSS Feed"
+  rss_topics_in_category: "'%{category}' 版块中话题的 RSS Feed"
   rss_num_posts:
     other: "%{count} 个帖子"
   rss_num_participants:
@@ -439,7 +439,7 @@ zh_CN:
       invalid_domain: "'%{domain}' 不是有效网域。"
       invalid_incoming_email: "'%{email}' 不是有效的电子邮件地址。"
       email_already_used_in_group: "'%{email}' 已被群组 '%{group_name}' 使用。"
-      email_already_used_in_category: "'%{email}' 已被板块 '%{category_name}' 使用。"
+      email_already_used_in_category: "'%{email}' 已被版块 '%{category_name}' 使用。"
       cant_allow_membership_requests: "您不能允许没有任何所有者的组的成员资格请求。"
       already_requested_membership: "您已请求成为此群组的成员。"
       adding_too_many_users:
@@ -473,7 +473,7 @@ zh_CN:
 
       - 谁会对此感兴趣？为什么会感兴趣？您想得到怎样的回应？
 
-      - 在您的话题中包含常用词，以便其他人能够“找到”它。要将您的话题与相关话题并为一组，请选择一个板块（或标签）。
+      - 在您的话题中包含常用词，以便其他人能够“找到”它。要将您的话题与相关话题并为一组，请选择一个版块（或标签）。
 
       有关详情，[请参阅我们的社区准则](%{base_path}/guidelines)。此面板仅在您的前 %{education_posts_text}出现。
     "new-reply": |
@@ -520,11 +520,11 @@ zh_CN:
   activerecord:
     attributes:
       category:
-        name: "板块名称"
+        name: "版块名称"
       topic:
         title: "标题"
         featured_link: "精选链接"
-        category_id: "板块"
+        category_id: "版块"
       post:
         raw: "正文"
       user_profile:
@@ -611,41 +611,41 @@ zh_CN:
       <<: *errors
   uncategorized_category_name: "未分类"
   general_category_name: "常规"
-  general_category_description: "在此处创建不属于任何其他现有板块的话题。"
+  general_category_description: "在此处创建不属于任何其他现有版块的话题。"
   meta_category_name: "站点反馈"
   meta_category_description: "有关此站点、其组织、运作方式以及如何改进的讨论。"
   staff_category_name: "管理人员"
-  staff_category_description: "适用于管理人员讨论的不公开板块。话题仅对管理员和版主可见。"
+  staff_category_description: "适用于管理人员讨论的不公开版块。话题仅对管理员和版主可见。"
   discourse_welcome_topic:
     title: "欢迎来到 %{site_title}！:wave:"
     body: "我们非常高兴看到你加入我们。 \n\n%{site_info_quote}\n\n以下是一些可以帮助你入门的事情：\n\n:speaking_head: 在[个人资料](%{base_path}/my/account)中添加你的照片和关于你自己和你的兴趣的信息，**介绍你自己**。你希望被别人了解的一件事是什么？\n\n:open_book: 通过[浏览这些已经发生的讨论](%{base_path}/top)来**了解社区**。当你发现一个帖子很有趣、信息量很大或者很有娱乐性时，请使用 :heart: 表达你的欣赏或支持！\n\n:handshake: 通过评论、分享你自己的观点、提出问题或在讨论中提供反馈来**贡献**。在回复或开始新话题之前，请查阅[社区准则](%{base_path}/faq)。\n\n> 如果你需要帮助或有建议，请随时在 %{feedback_category} 或 [contact the admins](%{base_path}/about) 中提出。\n"
   admin_quick_start_title: "管理员指南：使用入门"
   category:
-    topic_prefix: "关于“%{category}”板块"
-    replace_paragraph: "（将第一段替换为新板块的简要说明。此指导将显示在板块选择区域中，因此请尽量将其保持在 200 个字符以内。）"
-    post_template: "%{replace_paragraph}\n\n使用以下段落提供详细描述或者建立板块准则或规则：\n\n- 为什么应使用此板块？它用来做什么？\n\n- 此板块和我们已经有的板块究竟有什么不同？\n\n- 此板块中的话题一般包含什么？\n\n- 我们需要此板块吗？我们可以将其与其他板块或子板块合并吗？"
+    topic_prefix: "关于“%{category}”版块"
+    replace_paragraph: "（将第一段替换为新版块的简要说明。此指导将显示在版块选择区域中，因此请尽量将其保持在 200 个字符以内。）"
+    post_template: "%{replace_paragraph}\n\n使用以下段落提供详细描述或者建立版块准则或规则：\n\n- 为什么应使用此版块？它用来做什么？\n\n- 此版块和我们已经有的版块究竟有什么不同？\n\n- 此版块中的话题一般包含什么？\n\n- 我们需要此版块吗？我们可以将其与其他版块或子版块合并吗？"
     errors:
-      not_found: "找不到板块！"
-      uncategorized_parent: "未分类不能有父板块"
-      self_parent: "子板块的父板块不能是它自己。"
-      depth: "您不能将一个子板块嵌套在其他子板块下。"
+      not_found: "找不到版块！"
+      uncategorized_parent: "未分类不能有父版块"
+      self_parent: "子版块的父版块不能是它自己。"
+      depth: "您不能将一个子版块嵌套在其他子版块下。"
       invalid_email_in: "'%{email}' 不是有效的电子邮件地址。"
       email_already_used_in_group: "'%{email}' 已被群组 '%{group_name}' 使用。"
-      email_already_used_in_category: "'%{email}' 已被板块 '%{category_name}' 使用。"
-      description_incomplete: "板块描述帖子至少要有一段。"
-      permission_conflict: "任何被允许访问子板块的组也必须被允许访问父板块。以下群组可以访问子板块之一，但无法访问父板块：%{group_names}。"
-      disallowed_topic_tags: "此话题包含此板块不允许的标签：%{tags}"
+      email_already_used_in_category: "'%{email}' 已被版块 '%{category_name}' 使用。"
+      description_incomplete: "版块描述帖子至少要有一段。"
+      permission_conflict: "任何被允许访问子版块的组也必须被允许访问父版块。以下群组可以访问子版块之一，但无法访问父版块：%{group_names}。"
+      disallowed_topic_tags: "此话题包含此版块不允许的标签：%{tags}"
       disallowed_tags_generic: "此话题包含禁止的标签。"
       slug_contains_non_ascii_chars: "包含非 ASCII 字符"
       is_already_in_use: "已在使用中"
-      move_topic_to_category_disallowed: "您不能将此话题移动到一个您没有权限创建新话题的板块。"
+      move_topic_to_category_disallowed: "您不能将此话题移动到一个您没有权限创建新话题的版块。"
     cannot_delete:
-      uncategorized: "此板块比较特殊。它旨在作为没有板块的话题的存放区域；不能删除。"
-      has_subcategories: "无法删除此板块，因为它有子板块。"
+      uncategorized: "此版块比较特殊。它旨在作为没有版块的话题的存放区域；不能删除。"
+      has_subcategories: "无法删除此版块，因为它有子版块。"
       topic_exists:
-        other: "无法删除此板块，因为它有 %{count} 个话题。时间最久的话题是 %{topic_link}。"
-      topic_exists_no_oldest: "无法删除此板块，因为话题数量为 %{count}。"
-    uncategorized_description: "不需要板块或不适合任何其他现有板块的话题。"
+        other: "无法删除此版块，因为它有 %{count} 个话题。时间最久的话题是 %{topic_link}。"
+      topic_exists_no_oldest: "无法删除此版块，因为话题数量为 %{count}。"
+    uncategorized_description: "不需要版块或不适合任何其他现有版块的话题。"
   trust_levels:
     admin: "管理员"
     staff: "管理人员"
@@ -1362,14 +1362,14 @@ zh_CN:
     unreachable_themes: "我们无法检查以下主题的更新："
     watched_word_regexp_error: "'%{action}' 关注词的正则表达式无效。请检查您的<a href='%{base_path}/admin/customize/watched_words'>关注词设置</a>，或禁用“关注词正则表达式”站点设置。"
     v3_analytics_deprecated: "您的 Discourse 目前使用的是 Google Analytics（分析）3，2023 年 7 月后该版本将不受支持。立即<a href='https://meta.discourse.org/t/260498'>升级到Google Analytics（分析）4</a> ，以继续接收有价值的见解和分析，了解您的网站性能。"
-    category_style_deprecated: "你的 Discourse 目前使用的是过时的分类样式，该样式将在 Discourse 3.2 最终测试版发布前移除。请参阅 <a href='https://meta.discourse.org/t/282441'>移至单一板块风格网站设置</a> ，了解如何保留所选板块风格。"
+    category_style_deprecated: "你的 Discourse 目前使用的是过时的分类样式，该样式将在 Discourse 3.2 最终测试版发布前移除。请参阅 <a href='https://meta.discourse.org/t/282441'>移至单一版块风格网站设置</a> ，了解如何保留所选版块风格。"
   site_settings:
     allow_bulk_invite: "允许通过上传 CSV 文件批量邀请"
     disabled: "已禁用"
     display_local_time_in_user_card: "打开用户卡片时，根据用户的时区显示当地时间。"
     censored_words: "将被自动替换为 &#9632;&#9632;&#9632;&#9632; 的字词"
     delete_old_hidden_posts: "自动删除被隐藏超过 30 天的帖子。"
-    default_locale: "此 Discourse 实例的默认语言。您可以在<a href='%{base_path}/admin/customize/site_texts' target='_blank'>自定义/文本</a>中替换系统生成的板块和话题的文本。"
+    default_locale: "此 Discourse 实例的默认语言。您可以在<a href='%{base_path}/admin/customize/site_texts' target='_blank'>自定义/文本</a>中替换系统生成的版块和话题的文本。"
     allow_user_locale: "允许用户选择他们自己的语言界面偏好设置"
     set_locale_from_accept_language_header: "从网络浏览器的语言标头为匿名用户设置界面语言"
     support_mixed_text_direction: "支持从左到右和从右到左的混合文本方向。"
@@ -1394,12 +1394,12 @@ zh_CN:
     search_query_log_max_retention_days: "保留搜索查询的最长时间（以天为单位）。"
     search_ignore_accents: "搜索文本时忽略注音。"
     search_default_sort_order: "整页搜索的默认排序顺序"
-    category_search_priority_low_weight: "应用于低板块搜索优先级排名的权重。"
-    category_search_priority_high_weight: "应用于高板块搜索优先级排名的权重。"
-    default_composer_category: "创建新话题时用于预填充板块下拉菜单的板块。"
-    allow_uncategorized_topics: "允许创建没有板块的话题。警告：如果有任何未分类的话题，您必须先对它们进行重新分类，然后才能将其关闭。"
+    category_search_priority_low_weight: "应用于低版块搜索优先级排名的权重。"
+    category_search_priority_high_weight: "应用于高版块搜索优先级排名的权重。"
+    default_composer_category: "创建新话题时用于预填充版块下拉菜单的版块。"
+    allow_uncategorized_topics: "允许创建没有版块的话题。警告：如果有任何未分类的话题，您必须先对它们进行重新分类，然后才能将其关闭。"
     allow_duplicate_topic_titles: "允许有相同或重复标题的话题。"
-    allow_duplicate_topic_titles_category: "如果板块不同，允许有相同或重复标题的话题。必须禁用 allow_duplicate_topic_titles。"
+    allow_duplicate_topic_titles_category: "如果版块不同，允许有相同或重复标题的话题。必须禁用 allow_duplicate_topic_titles。"
     unique_posts_mins: "用户可以再次发布相同内容的帖子前需要等待的分钟数"
     educate_until_posts: "当用户开始输入他们的前几 (n) 个新帖子时，在编辑器中显示弹出式新用户教育面板。"
     title: "此站点的名称。对包括匿名用户在内的所有访客可见。"
@@ -1425,15 +1425,15 @@ zh_CN:
     max_image_width: "帖子中图像的最大缩略图宽度。具有更大宽度的图像将进行大小和光效的调整。"
     max_image_height: "帖子中图像的最大缩略图高度。具有更大高度的图像将进行大小和光效的调整。"
     responsive_post_image_sizes: "调整灯箱预览图片的大小以允许以下像素比率的高 DPI 屏幕。移除所有值将禁用自适应图片。"
-    fixed_category_positions: "如果选中，您将能够按固定顺序排列板块。如果取消选中，则按活动顺序列出板块。"
-    fixed_category_positions_on_create: "如果选中，将在话题创建对话框中维护板块排序（需要 fixed_category_positions）。"
+    fixed_category_positions: "如果选中，您将能够按固定顺序排列版块。如果取消选中，则按活动顺序列出版块。"
+    fixed_category_positions_on_create: "如果选中，将在话题创建对话框中维护版块排序（需要 fixed_category_positions）。"
     add_rel_nofollow_to_user_content: '将 rel nofollow 属性添加到提交的所有用户内容，除了内部链接（包括父网域）。如果您更改此设置，则必须使用“rake posts:rebake”重新发布所有帖子。'
     exclude_rel_nofollow_domains: "不应将 nofollow 添加到链接的网域列表。example.com 也会自动允许 sub.example.com。至少，您应该添加此站点的网域以帮助网络抓取工具查找所有内容。如果您的网站的其他部分位于其他网域，也可以添加这些部分。"
     max_form_template_title_length: "表单模板标题允许的最大长度。"
     max_form_template_content_length: "表单模板内容允许的最大长度。"
     post_excerpt_maxlength: "帖子摘录/总结的最大长度。"
     topic_excerpt_maxlength: "从话题中的第一个帖子生成的话题摘录/总结的最大长度。"
-    default_subcategory_on_read_only_category: "在用户无法创建新话题的板块中，启用“新话题”按钮并选择一个默认子板块进行发布。"
+    default_subcategory_on_read_only_category: "在用户无法创建新话题的版块中，启用“新话题”按钮并选择一个默认子版块进行发布。"
     show_pinned_excerpt_mobile: "在移动视图中显示置顶话题的摘录。"
     show_pinned_excerpt_desktop: "在桌面视图中显示置顶话题的摘录。"
     post_onebox_maxlength: "Onebox Discourse 帖子的最大长度（以字符为单位）。"
@@ -1520,7 +1520,7 @@ zh_CN:
     ga_universal_auto_link_domains: "启用 Google Universal Analytics 跨网域跟踪。指向这些网域的出站链接将在其中添加客户端 ID。请参阅 <a href='https://support.google.com/analytics/answer/1034342?hl=en' target='_blank'>Google 的跨网域跟踪指南</a>。"
     gtm_container_id: "Google 跟踪代码管理器容器 ID。例如：GTM-ABCD12E。 <br/>注意：要在启用内容安全策略 (CSP) 时使用 GTM，请参阅Meta上的文档： <a href='https://meta.discourse.org/t/use-nonces-in-google-tag-manager-scripts/188296' target='_blank'>在 Google 跟踪代码管理器脚本中使用随机数</a>。"
     enable_escaped_fragments: "如果未检测到网络抓取工具，则回退到 Google 的 Ajax-Crawling API。请参阅 <a href='https://developers.google.com/webmasters/ajax-crawling/docs/learn-more' target='_blank'>https://developers.google.com/webmasters/ajax-crawling/docs/learn-more</a>"
-    moderators_manage_categories_and_groups: "允许版主创建和管理板块和群组"
+    moderators_manage_categories_and_groups: "允许版主创建和管理版块和群组"
     moderators_change_post_ownership: "允许版主更改帖子所有权"
     cors_origins: "允许跨源请求（CORS）。每个来源必须包括 http:// 或 https://。环境变量 DISCOURSE_ENABLE_CORS 必须设置为 true 才能启用 CORS。"
     use_admin_ip_allowlist: "只有使用“屏蔽的 IP 列表”（管理 > 日志 > 屏蔽的 IP）中的 IP 地址时，管理员才能登录。"
@@ -1538,7 +1538,7 @@ zh_CN:
     content_security_policy_frame_ancestors: "限制谁可以通过 CSP 将此站点嵌入 iframe 中。在<a href='%{base_path}/admin/customize/embedding'>嵌入</a>上控制允许的主机。"
     content_security_policy_script_src: "附加的脚本来源白名单。默认包含当前主机和 CDN。<a href='https://meta.discourse.org/t/mitigate-xss-attacks-with-content-security-policy/104243' target='_blank'>使用内容安全策略缓解 XSS 攻击</a> (CSP)"
     invalidate_inactive_admin_email_after_days: "在此天数内未访问站点的管理员帐户将需要在登录前重新验证其电子邮件地址。设置为 0 将禁用。"
-    include_secure_categories_in_tag_counts: "启用后，一个标签的话题数量将包括所有用户的阅读限制板块中的话题。禁用时，常规用户只会看到所有话题都为公开板块的标签的话题数量。"
+    include_secure_categories_in_tag_counts: "启用后，一个标签的话题数量将包括所有用户的阅读限制版块中的话题。禁用时，常规用户只会看到所有话题都为公开版块的标签的话题数量。"
     display_personal_messages_tag_counts: "启用后，将显示使用给定标签标记的个人消息的数量。"
     top_menu: "确定主页导航中显示的条目，以及出现的顺序。"
     post_menu: "确定帖子菜单中显示的条目，以及出现的顺序。"
@@ -1677,9 +1677,9 @@ zh_CN:
     invite_link_max_redemptions_limit_users: "普通用户生成的邀请链接允许的最大确认次数不能超过此值。"
     alert_admins_if_errors_per_minute: "激活管理员警告的每分钟错误数量。值为 0 会禁用此功能。注意：需要重启。"
     alert_admins_if_errors_per_hour: "激活管理员警告的每小时错误数量。值为 0 会禁用此功能。注意：需要重启。"
-    categories_topics: "要在 /categories 页面中显示的话题数量。如果设置为 0，它将自动尝试寻找一个值来保持两列对称（板块和话题）。"
+    categories_topics: "要在 /categories 页面中显示的话题数量。如果设置为 0，它将自动尝试寻找一个值来保持两列对称（版块和话题）。"
     suggested_topics: "在话题底部显示的推荐话题的数量。"
-    limit_suggested_to_category: "仅在推荐话题中显示当前板块中的话题"
+    limit_suggested_to_category: "仅在推荐话题中显示当前版块中的话题"
     suggested_topics_max_days_old: "推荐话题的存在时间不应超过 n 天。"
     suggested_topics_unread_max_days_old: "推荐未读话题的存在时间不应超过 n 天。"
     clean_up_uploads: "移除孤立的未引用上传以防止非法托管。警告：您可能需要先备份 /uploads 目录，然后才能启用此设置。"
@@ -1743,7 +1743,7 @@ zh_CN:
     tl3_requires_likes_received: "为了有资格升级到信任级别 3，在过去 (tl3 time period) 天内必须收到的最少赞数。"
     tl3_links_no_follow: "不从信任级别 3 用户发布的链接中移除 rel=nofollow。"
     tl4_delete_posts_and_topics: "允许 TL4 用户删除其他用户创建的帖子和话题。 TL4 用户还可以查看已删除的话题和帖子。"
-    edit_all_topic_groups: "允许此群组中的用户编辑其他用户的主题标题、标签和板块"
+    edit_all_topic_groups: "允许此群组中的用户编辑其他用户的主题标题、标签和版块"
     edit_all_post_groups: "允许此群组中的用户编辑其他用户的帖子"
     min_trust_to_create_topic: "创建新话题所需的最低信任级别。"
     allow_flagging_staff: "如果启用，用户可以举报来自管理人员帐户的帖子。"
@@ -1781,12 +1781,12 @@ zh_CN:
     title_min_entropy: "话题标题所需的最小熵（唯一字符，非英语计数更多）。"
     body_min_entropy: "帖子正文所需的最小熵（唯一字符，非英语计数更多）。"
     allow_uppercase_posts: "允许在话题标题或帖子正文中全部使用大写字母。"
-    max_consecutive_replies: "用户在被阻止添加另一个回复之前可以在话题中连续发布的帖子数。此限值不适用于话题所有者、站点工作人员或板块版主。"
+    max_consecutive_replies: "用户在被阻止添加另一个回复之前可以在话题中连续发布的帖子数。此限值不适用于话题所有者、站点工作人员或版块版主。"
     enable_filtered_replies_view: '“(n) 回复”按钮会收起所有其他帖子，仅显示当前帖子及其回复。'
     title_fancy_entities: "将常见的 ASCII 字符转换为话题标题中的花哨 HTML 实体，又称为 SmartyPants <a href='https://daringfireball.net/projects/smartypants/' target='_blank'>https://daringfireball.net/projects/smartypants/</a>"
     min_title_similar_length: "检查有无类似话题之前的标题的最小长度。"
     desktop_category_page_style: "/categories 页面的视觉样式。"
-    category_colors: "设置板块允许的十六进制颜色值列表。"
+    category_colors: "设置版块允许的十六进制颜色值列表。"
     default_dark_mode_color_scheme_id: "在深色模式下使用的配色方案。"
     dark_mode_none: "无"
     max_image_size_kb: "最大图片上传大小（以 kB 为单位）。也必须在 nginx (client_max_body_size) / apache 或代理中配置。大于此值且小于 client_max_body_size 的图片将调整大小以适合上传。"
@@ -1892,7 +1892,7 @@ zh_CN:
     pop3_polling_password: "用于轮询电子邮件的 POP3 帐户的密码。"
     pop3_polling_delete_from_server: "从服务器删除电子邮件。注意：如果您禁用此功能，您应该手动清理您的邮件收件箱"
     log_mail_processing_failures: "将所有电子邮件处理失败记录到 <a href='%{base_path}/logs' target='_blank'>/logs</a>"
-    email_in: "允许用户通过电子邮件发布新话题。启用此设置后，您将能够为群组和板块配置传入电子邮件地址。"
+    email_in: "允许用户通过电子邮件发布新话题。启用此设置后，您将能够为群组和版块配置传入电子邮件地址。"
     email_in_min_trust: "用户要被允许通过电子邮件发布新话题所需的最低信任级别。"
     email_in_authserv_id: "对传入电子邮件进行身份验证检查的服务的标识符。请参阅 <a href='https://meta.discourse.org/t/134358'>https://meta.discourse.org/t/134358</a> 了解配置说明"
     email_in_spam_header: "用于检测垃圾信息的电子邮件标头。"
@@ -1920,10 +1920,10 @@ zh_CN:
     automatically_download_gravatars: "在创建帐户或更改电子邮件时为用户下载 Gravatar。"
     digest_topics: "要在电子邮件总结中显示的最大热门话题数。"
     digest_posts: "要在电子邮件总结中显示的热门帖子的最大数量。"
-    digest_other_topics: "在电子邮件总结的“您关注的新话题和板块”部分中显示的最大话题数。"
+    digest_other_topics: "在电子邮件总结的“您关注的新话题和版块”部分中显示的最大话题数。"
     digest_min_excerpt_length: "电子邮件总结中的最少帖子摘录，以字符为单位。"
     suppress_digest_email_after_days: "禁止向超过 (n) 天未在站点上看到的用户发送总结电子邮件。"
-    digest_suppress_categories: "从总结电子邮件中禁止这些板块。"
+    digest_suppress_categories: "从总结电子邮件中禁止这些版块。"
     digest_suppress_tags: "从摘要电子邮件中禁止这些标签。"
     disable_digest_emails: "禁用所有用户的总结电子邮件。"
     apply_custom_styles_to_digest: "自定义电子邮件模板和 CSS 应用于总结电子邮件。"
@@ -1936,7 +1936,7 @@ zh_CN:
     staff_user_custom_fields: "可以使用 API 为管理人员检索的用户自定义字段列表。"
     enable_user_directory: "提供用户目录以供浏览"
     enable_group_directory: "提供群组目录以供浏览"
-    enable_category_group_moderation: "允许群组审核特定板块的内容"
+    enable_category_group_moderation: "允许群组审核特定版块的内容"
     group_in_subject: "在电子邮件主题中将 %%{optional_pm} 设置为 PM 中第一个群组的名称，请参阅：<a href='https://meta.discourse.org/t/customize-specific-email-templates/88323' target='_blank'>自定义标准电子邮件的主题格式</a>"
     allow_anonymous_posting: "允许用户切换至匿名模式"
     allow_anonymous_likes: "允许匿名用户点赞帖子"
@@ -1965,17 +1965,17 @@ zh_CN:
     disable_avatar_education_message: "禁用更改头像的教育消息。"
     pm_warn_user_last_seen_months_ago: "在创建新的 PM 时，如果目标接收者已经超过 n 个月前无活动，则警告用户。"
     suppress_uncategorized_badge: "不在话题列表中显示未分类话题的徽章。"
-    header_dropdown_category_count: "标题下拉菜单中可以显示的板块数量。"
+    header_dropdown_category_count: "标题下拉菜单中可以显示的版块数量。"
     permalink_normalizations: "在匹配永久链接之前应用以下正则表达式，例如：/(topic.*)\\?.*/\\1 将从话题路由中去除查询字符串。格式为正则表达式+字符串。使用 \\1 等访问捕获"
     global_notice: "向所有访客显示紧急、突发、不可忽略的全局横幅通知，更改为空将隐藏（允许使用 HTML）。"
     disable_system_edit_notifications: "当 'download_remote_images_to_local' 启用时禁用系统用户的编辑通知。"
-    disable_category_edit_notifications: "禁用主题板块编辑通知。包括 “已发布” 的主题(例如共享草稿)。"
+    disable_category_edit_notifications: "禁用主题版块编辑通知。包括 “已发布” 的主题(例如共享草稿)。"
     disable_tags_edit_notifications: "禁用主题标签编辑的通知。包括“已发布”的主题(例如共享草稿)。"
     notification_consolidation_threshold: "合并通知前，收到的赞或成员资格请求通知的数量。设置为 0 将禁用。"
     likes_notification_consolidation_window_mins: "以分钟计的持续时间，被赞的通知在达到此阈值后会被合并到单个通知中。可以通过 `SiteSetting.notification_consolidation_threshold` 配置阈值。"
     automatically_unpin_topics: "当用户到达底部时自动取消置顶话题。"
     read_time_word_count: "每分钟可阅读的字数，用于估算阅读时间。"
-    topic_page_title_includes_category: "话题页面<a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title' target='_blank'>标题标签</a>包含板块名称。"
+    topic_page_title_includes_category: "话题页面<a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title' target='_blank'>标题标签</a>包含版块名称。"
     native_app_install_banner_ios: "在 iOS 设备上向基本用户（信任级别 1）及以上的用户显示 DiscourseHub 应用横幅。"
     native_app_install_banner_android: "在 Android 设备上向基本用户（信任级别 1）及以上的用户显示 DiscourseHub 应用横幅。"
     app_association_android: "端点 <a href='%{base_path}/.well-known/assetlinks.json'>.well-known/assetlinks.json</a> 的内容，用于 Google 的 Digital Asset Links API。"
@@ -2010,7 +2010,7 @@ zh_CN:
     delete_merged_stub_topics_after_days: "在自动删除完全合并的存根话题之前等待的天数。设置为 0 将从不删除存根话题。"
     bootstrap_mode_min_users: "禁用引导模式所需的最小用户数（设置为 0 将禁用，最多可能需要 24 小时）"
     prevent_anons_from_downloading_files: "阻止匿名用户下载附件。"
-    secure_uploads: '限制对所有上传（图片、视频、音频、文本、pdf、zip 等）的访问。如果启用“需要登录”，则只有登录用户才能访问上传。否则，访问将仅限于私信和不公开板块中的媒体上传。警告：此设置比较复杂，需要深入理解管理操作。请参阅 <a target="_blank" href="https://meta.discourse.org/t/-/140017">Meta 安全上传话题</a>以了解详情。'
+    secure_uploads: '限制对所有上传（图片、视频、音频、文本、pdf、zip 等）的访问。如果启用“需要登录”，则只有登录用户才能访问上传。否则，访问将仅限于私信和不公开版块中的媒体上传。警告：此设置比较复杂，需要深入理解管理操作。请参阅 <a target="_blank" href="https://meta.discourse.org/t/-/140017">Meta 安全上传话题</a>以了解详情。'
     secure_uploads_allow_embed_images_in_emails: "如果小于 'secure uploads max email embed image size kb' 设置，则允许嵌入通常会在电子邮件中编辑的安全图片。"
     secure_uploads_max_email_embed_image_size_kb: "如果启用了 'secure uploads allow embed in emails' 设置，将被嵌入到电子邮件的安全图片的大小限制；如果不启用，则此设置无效。"
     slug_generation_method: "选择一种缩略名生成方法。'encoded' 将生成百分比编码字符串。'none' 将完全禁用缩略名。"
@@ -2063,12 +2063,12 @@ zh_CN:
     default_other_skip_new_user_tips: "跳过新用户入门提示和徽章。"
     default_other_like_notification_frequency: "默认通知用户获得赞"
     default_topics_automatic_unpin: "当用户到达底部时默认自动取消置顶话题。"
-    default_categories_watching: "默认关注的板块列表。"
-    default_categories_tracking: "默认跟踪的板块列表。"
-    default_categories_muted: "默认被设为免打扰的板块列表。"
-    default_categories_watching_first_post: "默认将关注每个新话题中的第一个帖子的板块列表。"
-    default_categories_normal: "默认未被设为免打扰的板块列表。启用 `mute_all_categories_by_default` 站点设置时很有用。"
-    mute_all_categories_by_default: "将所有板块的默认通知级别设置为免打扰。要求用户选择加入板块，以便他们出现在“最新”和“板块”页面中。如果您希望修改匿名用户的默认设置，请设置 'default_categories_' 设置。"
+    default_categories_watching: "默认关注的版块列表。"
+    default_categories_tracking: "默认跟踪的版块列表。"
+    default_categories_muted: "默认被设为免打扰的版块列表。"
+    default_categories_watching_first_post: "默认将关注每个新话题中的第一个帖子的版块列表。"
+    default_categories_normal: "默认未被设为免打扰的版块列表。启用 `mute_all_categories_by_default` 站点设置时很有用。"
+    mute_all_categories_by_default: "将所有版块的默认通知级别设置为免打扰。要求用户选择加入版块，以便他们出现在“最新”和“版块”页面中。如果您希望修改匿名用户的默认设置，请设置 'default_categories_' 设置。"
     default_tags_watching: "默认关注的标签列表。"
     default_tags_tracking: "默认跟踪的标签列表。"
     default_tags_muted: "默认被设为免打扰的标签列表。"
@@ -2107,13 +2107,13 @@ zh_CN:
     suppress_overlapping_tags_in_list: "如果标签与话题标题中的字词完全匹配，则不显示标签"
     remove_muted_tags_from_latest: "不在最新话题列表中显示仅使用已被设为免打扰的标签标记的话题。"
     force_lowercase_tags: "强制所有新标签完全小写。"
-    create_post_for_category_and_tag_changes: "当话题的板块或标签发生变化时创建一篇小的行动帖子"
+    create_post_for_category_and_tag_changes: "当话题的版块或标签发生变化时创建一篇小的行动帖子"
     automatically_clean_unused_tags: "每天自动删除未在任何主题或私信中使用的标签。"
-    watched_precedence_over_muted: "如果我正在关注的板块或标签中有我已设为免打扰的话题，请通知我。"
+    watched_precedence_over_muted: "如果我正在关注的版块或标签中有我已设为免打扰的话题，请通知我。"
     company_name: "您的公司或组织的名称。如果留空，则不会按照模板提供服务条款或隐私声明。"
     governing_law: "适用法律"
     city_for_disputes: "争议之城"
-    shared_drafts_category: "通过为话题草稿指定板块来启用共享草稿功能。此板块中的话题将在管理人员用户的话题列表中被禁止。"
+    shared_drafts_category: "通过为话题草稿指定版块来启用共享草稿功能。此版块中的话题将在管理人员用户的话题列表中被禁止。"
     shared_drafts_min_trust_level: "允许用户查看和编辑共享草稿。"
     shared_drafts_allowed_groups: "允许这些组中的用户查看和编辑共享草稿。"
     push_notifications_prompt: "显示用户同意提示。"
@@ -2135,14 +2135,14 @@ zh_CN:
     gravatar_login_url: "相对于 gravatar_base_url 的 URL，让用户可以登录 Gravatar 服务"
     share_quote_buttons: "确定引用分享微件中显示的条目以及显示顺序。"
     share_quote_visibility: "确定何时显示引用分享按钮：从不、仅匿名用户或所有用户。"
-    create_revision_on_bulk_topic_moves: "当话题被批量移入新板块时，为第一个帖子创建修订。"
-    allow_changing_staged_user_tracking: "允许管理员用户更改暂存用户的板块和标签通知偏好设置。"
+    create_revision_on_bulk_topic_moves: "当话题被批量移入新版块时，为第一个帖子创建修订。"
+    allow_changing_staged_user_tracking: "允许管理员用户更改暂存用户的版块和标签通知偏好设置。"
     use_email_for_username_and_name_suggestions: "使用电子邮件地址的第一部分作为用户名和名称建议。请注意，这使公众更容易猜测完整的用户电子邮件地址（因为很大一部分人共享共同的服务，如 `gmail.com`）。"
     use_name_for_username_suggestions: "建议用户名时使用用户的全名。"
     suggest_weekends_in_date_pickers: "在日期选择器建议中包括周末（周六和周日）（如果您仅在工作日（周一至周五）使用 Discourse，请禁用此选项）。"
     splash_screen: "在加载站点资源时显示临时加载屏幕"
     navigation_menu: "确定要使用的导航菜单。边栏和标题导航可由用户自定义。旧版选项用于向后兼容。"
-    default_navigation_menu_categories: "所选板块默认将显示在导航菜单的“板块”版块下。"
+    default_navigation_menu_categories: "所选版块默认将显示在导航菜单的“版块”版块下。"
     default_navigation_menu_tags: "所选标签默认将显示在导航菜单的“标签”版块下。"
     experimental_new_new_view_groups: '实验性：启用一个新的话题列表，将未读话题和新话题合并，并使边栏中的“一切”链接指向它。'
     enable_custom_sidebar_sections: "实验性：启用自定义边栏版块"
@@ -2206,7 +2206,7 @@ zh_CN:
       search_tokenize_japanese_enabled: "在启用此设置之前，您必须禁用 'search_tokenize_japanese'。"
       discourse_connect_cannot_be_enabled_if_second_factor_enforced: "如果强制执行双重身份验证，则无法启用 DiscourseConnect。"
       delete_rejected_email_after_days: "此设置不能设置为低于 delete_email_logs_after_days 设置或大于 %{max}"
-      invalid_uncategorized_category_setting: '如果“允许未分类话题”设置未启用，则无法选择“未分类”板块。'
+      invalid_uncategorized_category_setting: '如果“允许未分类话题”设置未启用，则无法选择“未分类”版块。'
       invalid_search_ranking_weights: "该值对于 search_ranking_weights 站点设置无效。示例：'{0.1,0.2,0.3,1.0}'。注意，每个权重的最大值为 1.0。"
     keywords:
       here_mention_allowed_groups: "min_trust_level_for_here_mention"
@@ -2219,7 +2219,7 @@ zh_CN:
     extreme_load_error: "站点负载过大，搜索被禁用，请稍后再试"
     within_post: "#%{post_number}，来自 %{username}"
     types:
-      category: "板块"
+      category: "版块"
       topic: "结果"
       user: "用户"
     results_page: "'%{term}' 的搜索结果"
@@ -2935,14 +2935,14 @@ zh_CN:
       text_body_template: |
         抱歉，但是您向 %{destination}（名为 %{former_title}）发送的电子邮件未成功。
 
-        您的帐户没有权限在该板块下发布新话题。如果您有异议，请[联系管理人员](%{base_url}/about)。
+        您的帐户没有权限在该版块下发布新话题。如果您有异议，请[联系管理人员](%{base_url}/about)。
     email_reject_strangers_not_allowed:
       title: "电子邮件被拒：不允许陌生人"
       subject_template: "[%{email_prefix}] 电子邮件问题 - 无效访问"
       text_body_template: |
         抱歉，但是您向 %{destination}（名为 %{former_title}）发送的电子邮件未成功。
 
-        您将此电子邮件发送到的板块仅允许来自使用有效帐户和已知电子邮件地址的用户的回复。如果您有异议，请[联系管理人员](%{base_url}/about)。
+        您将此电子邮件发送到的版块仅允许来自使用有效帐户和已知电子邮件地址的用户的回复。如果您有异议，请[联系管理人员](%{base_url}/about)。
     email_reject_invalid_post:
       title: "电子邮件被拒：无效帖子"
       subject_template: "[%{email_prefix}] 电子邮件问题 - 发帖错误"
@@ -3413,7 +3413,7 @@ zh_CN:
 
         %{respond_instructions}
     user_watching_category_or_tag:
-      title: "用户关注板块或标签"
+      title: "用户关注版块或标签"
       subject_template: "[%{email_prefix}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -3877,7 +3877,7 @@ zh_CN:
 
       花一点时间让东西出现在正确的位置，这样我们可以将更多的时间花在讨论而非清理上。所以：
 
-      * 不要在错误的板块发表新话题；请阅读板块定义。
+      * 不要在错误的版块发表新话题；请阅读版块定义。
       * 不要在多个话题中回复同样的内容。
       * 不要发布没有内容的回复。
       * 不要在中途改变话题。
@@ -3895,7 +3895,7 @@ zh_CN:
 
       ## [由您推动](#power)
 
-      此站点由[友善的管理人员](%{base_path}/about)、*您*和社区一起运营。如果您对这里的工作方式有任何进一步的问题，请在[站点反馈板块](%{base_path}/c/site-feedback)新建一个话题并开始讨论！如果遇到了重要或紧急的事情，并且不能通过话题或举报解决，请通过[管理人员页面](%{base_path}/about)联系我们。
+      此站点由[友善的管理人员](%{base_path}/about)、*您*和社区一起运营。如果您对这里的工作方式有任何进一步的问题，请在[站点反馈版块](%{base_path}/c/site-feedback)新建一个话题并开始讨论！如果遇到了重要或紧急的事情，并且不能通过话题或举报解决，请通过[管理人员页面](%{base_path}/about)联系我们。
 
       <a name="tos"></a>
 
@@ -4434,15 +4434,15 @@ zh_CN:
     forbidden:
       invalid:
         other: "您选择的标签均无法使用"
-      in_this_category: '“%{tag_name}”不能用于此板块'
+      in_this_category: '“%{tag_name}”不能用于此版块'
       restricted_to:
-        other: '“%{tag_name}”仅限于以下板块：%{category_names}'
+        other: '“%{tag_name}”仅限于以下版块：%{category_names}'
       synonym: '不允许使用同义词。改用“%{tag_name}”。'
       has_synonyms: '无法使用“%{tag_name}”，因为有同义词。'
       restricted_tags_cannot_be_used_in_category:
-        other: '“%{tags}”标签不能在“%{category}”板块中使用。请将其移除。'
+        other: '“%{tags}”标签不能在“%{category}”版块中使用。请将其移除。'
       category_does_not_allow_tags:
-        other: '“%{category}”板块不允许使用“%{tags}”标签。请将其移除。'
+        other: '“%{category}”版块不允许使用“%{tags}”标签。请将其移除。'
     required_tags_from_group:
       other: "您必须至少包含 %{count} 个%{tag_group_name}标签。此组中的标签包括：%{tags}。"
     limited_to_one_tag_from_group: "标签 %{tags} 不能同时使用。请仅包含其中一个标签。"
@@ -4523,21 +4523,21 @@ zh_CN:
               latest:
                 label: "最新话题"
               categories_only:
-                label: "仅板块"
+                label: "仅版块"
               categories_with_featured_topics:
-                label: "包含精选话题的板块"
+                label: "包含精选话题的版块"
               categories_and_latest_topics:
-                label: "板块和最新话题"
+                label: "版块和最新话题"
               categories_and_latest_topics_created_date:
-                label: "板块和最新话题（按话题创建日期排序）"
+                label: "版块和最新话题（按话题创建日期排序）"
               categories_and_top_topics:
-                label: "板块和热门话题"
+                label: "版块和热门话题"
               categories_boxes:
-                label: "板块框"
+                label: "版块框"
               categories_boxes_with_topics:
-                label: "包含话题的板块框"
+                label: "包含话题的版块框"
               subcategories_with_featured_topics:
-                label: "包含精选话题的子板块"
+                label: "包含精选话题的子版块"
       branding:
         title: "站点徽标"
         fields:
@@ -4635,7 +4635,7 @@ zh_CN:
       auto_silence_regex: "第一个帖子与%{link}设置匹配的新用户。"
       watched_word: "此帖子包括一个关注词。请查看您的%{link}。"
       staged: "暂存用户的新话题和帖子必须由管理人员批准。请参阅%{link}。"
-      category: "此板块中的帖子要求管理人员手动审批。请参阅%{link}。"
+      category: "此版块中的帖子要求管理人员手动审批。请参阅%{link}。"
       must_approve_users: "所有新用户都必须由管理人员审批。请参阅%{link}。"
       invite_only: "所有新用户都应受到邀请。请参阅%{link}。"
       email_auth_res_enqueue: "此电子邮件未通过 DMARC 检查，它很可能不是来自表面看起来的人。检查原始电子邮件标头以获取更多信息。"
@@ -4645,7 +4645,7 @@ zh_CN:
       queued_by_staff: "一名管理人员认为此帖子需要审核。在此之前，它将保持隐藏。"
       links:
         watched_word: 关注词的列表
-        category: 板块设置
+        category: 版块设置
     actions:
       agree:
         title: "是"

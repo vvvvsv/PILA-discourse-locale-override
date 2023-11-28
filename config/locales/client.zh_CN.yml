@@ -130,7 +130,7 @@ zh_CN:
       removed_group: "%{when}移除了 %{who}"
       autobumped: "%{when}自动提升"
       tags_changed: "标签 %{when}更新"
-      category_changed: "板块 %{when}更新"
+      category_changed: "版块 %{when}更新"
       autoclosed:
         enabled: "%{when}关闭"
         disabled: "%{when}打开"
@@ -194,7 +194,7 @@ zh_CN:
         us_west_1: "美国西部（北加利福尼亚州）"
         us_west_2: "美国西部（俄勒冈州）"
     clear_input: "清除输入"
-    edit: "编辑此话题的标题和板块"
+    edit: "编辑此话题的标题和版块"
     expand: "展开"
     not_implemented: "抱歉，该功能尚未实现！"
     no_value: "否"
@@ -472,14 +472,14 @@ zh_CN:
       cancel: "取消"
       new_topic: "批准此条目将创建一个新话题"
       filters:
-        all_categories: "（所有板块）"
+        all_categories: "（所有版块）"
         type:
           title: "类型"
           all: "（所有类型）"
         minimum_score: "最低分："
         refresh: "刷新"
         status: "状态"
-        category: "板块"
+        category: "版块"
         orders:
           score: "分数"
           score_asc: "分数（倒序）"
@@ -731,14 +731,14 @@ zh_CN:
           title: 成员资格
           access: 访问
         categories:
-          title: 板块
-          long_title: "板块默认通知"
-          description: "将用户添加到此群组时，其板块通知设置将被设置为这些默认值。之后，他们可以进行更改。"
-          watched_categories_instructions: "自动关注这些板块中的所有话题。组成员将收到所有新帖子和话题的通知，话题旁还会显示新帖子的数量。"
-          tracked_categories_instructions: "自动跟踪这些板块中的所有话题。新帖子的数量将显示在话题旁边。"
-          watching_first_post_categories_instructions: "用户将收到这些板块中每个新话题的第一个帖子的通知。"
-          regular_categories_instructions: "如果已被设为免打扰，这些板块将对群组成员取消免打扰。当用户被提及或其他人回复他们时，他们将收到通知。"
-          muted_categories_instructions: "用户不会收到有关这些板块中新话题的任何通知，它们也不会出现在板块或最新话题页面上。"
+          title: 版块
+          long_title: "版块默认通知"
+          description: "将用户添加到此群组时，其版块通知设置将被设置为这些默认值。之后，他们可以进行更改。"
+          watched_categories_instructions: "自动关注这些版块中的所有话题。组成员将收到所有新帖子和话题的通知，话题旁还会显示新帖子的数量。"
+          tracked_categories_instructions: "自动跟踪这些版块中的所有话题。新帖子的数量将显示在话题旁边。"
+          watching_first_post_categories_instructions: "用户将收到这些版块中每个新话题的第一个帖子的通知。"
+          regular_categories_instructions: "如果已被设为免打扰，这些版块将对群组成员取消免打扰。当用户被提及或其他人回复他们时，他们将收到通知。"
+          muted_categories_instructions: "用户不会收到有关这些版块中新话题的任何通知，它们也不会出现在版块或最新话题页面上。"
         tags:
           title: 标签
           long_title: "标签默认通知"
@@ -760,8 +760,8 @@ zh_CN:
           to: "至"
       permissions:
         title: "权限"
-        none: "没有板块与此群组关联。"
-        description: "此群组的成员可以访问这些板块"
+        none: "没有版块与此群组关联。"
+        description: "此群组的成员可以访问这些版块"
       public_admission: "允许用户自由加入群组（要求群组公开可见）"
       public_exit: "允许用户自由离开群组"
       empty:
@@ -903,22 +903,22 @@ zh_CN:
       "14": "待处理"
       "15": "草稿"
     categories:
-      all: "所有板块"
+      all: "所有版块"
       all_subcategories: "所有"
       no_subcategory: "无"
-      category: "板块"
-      category_list: "显示板块列表"
+      category: "版块"
+      category_list: "显示版块列表"
       reorder:
-        title: "对板块重新排序"
-        title_long: "重新组织板块列表"
+        title: "对版块重新排序"
+        title_long: "重新组织版块列表"
         save: "保存顺序"
         apply_all: "应用"
         position: "位置"
       posts: "帖子"
       topics: "话题"
       latest: "最新"
-      subcategories: "子板块"
-      muted: "已设为免打扰的板块"
+      subcategories: "子版块"
+      muted: "已设为免打扰的版块"
       topic_sentence:
         other: "%{count} 个话题"
       topic_stat:
@@ -932,7 +932,7 @@ zh_CN:
         other: "过去一周有 %{count} 个新话题。"
       topic_stat_sentence_month:
         other: "过去一个月有 %{count} 个新话题。"
-      n_more: "板块（还有%{count}个）…"
+      n_more: "版块（还有%{count}个）…"
     ip_lookup:
       title: IP 地址查询
       hostname: 主机名
@@ -1058,13 +1058,13 @@ zh_CN:
       no_bookmarks_search: "使用提供的搜索查询找不到书签。"
       no_notifications_title: "您还没有任何通知"
       no_notifications_body: >
-        您将直接在此面板上收到与您相关的活动通知，包括对您的话题和帖子的回复，以及当有人<b>提及 (@)</b> 您或引用您以及回复您关注的话题时。当您有一段时间没有登录时，通知还将发送到您的电子邮件。<br><br>查找 %{icon} 以决定您想收到通知的具体话题、板块和标签。有关详情，请参阅您的<a href='%{preferencesUrl}'>通知偏好设置</a>。
+        您将直接在此面板上收到与您相关的活动通知，包括对您的话题和帖子的回复，以及当有人<b>提及 (@)</b> 您或引用您以及回复您关注的话题时。当您有一段时间没有登录时，通知还将发送到您的电子邮件。<br><br>查找 %{icon} 以决定您想收到通知的具体话题、版块和标签。有关详情，请参阅您的<a href='%{preferencesUrl}'>通知偏好设置</a>。
       no_other_notifications_title: "您还没有任何其他通知"
       no_other_notifications_body: >
         您将在此面板中收到可能与您相关的其他类型活动的通知 – 例如，当有人链接到或编辑您的帖子时。
       no_notifications_page_title: "您还没有任何通知"
       no_notifications_page_body: >
-        您将收到有关与您直接相关的活动的通知，其中包括对您的话题和帖子的回复、有人提及 <b>@</b> 您、引用您的帖子时，或者回复您正在关注的话题。当您有一段时间没有登录时，通知也会发送到您的电子邮箱。<br><br> 查找 %{icon} 以决定您希望收到哪些特定话题、板块和标签的通知。有关更多信息，请查看您的<a href='%{preferencesUrl}'>通知偏好设置</a>。
+        您将收到有关与您直接相关的活动的通知，其中包括对您的话题和帖子的回复、有人提及 <b>@</b> 您、引用您的帖子时，或者回复您正在关注的话题。当您有一段时间没有登录时，通知也会发送到您的电子邮箱。<br><br> 查找 %{icon} 以决定您希望收到哪些特定话题、版块和标签的通知。有关更多信息，请查看您的<a href='%{preferencesUrl}'>通知偏好设置</a>。
       dynamic_favicon: "在浏览器图标上显示数量"
       skip_new_user_tips:
         description: "跳过新用户入门提示和徽章"
@@ -1111,7 +1111,7 @@ zh_CN:
         enabled: "启用邮寄名单模式"
         instructions: |
           此设置将替换活动总结。<br />
-          已设为免打扰的话题和板块将不会被包含在这些电子邮件中。
+          已设为免打扰的话题和版块将不会被包含在这些电子邮件中。
         individual: "为每个新帖子发送一封电子邮件"
         individual_no_echo: "为除了我发表的新帖子之外的每个新帖子发送一封电子邮件"
         many_per_day: "每当有新帖子时都向我发送电子邮件（每天大约 %{dailyEmailEstimate} 封）"
@@ -1125,20 +1125,20 @@ zh_CN:
       muted_tags: "已设为免打扰"
       muted_tags_instructions: "您不会收到有关带有这些标签的新话题的任何通知，它们也不会出现在最新话题页面上。"
       watched_categories: "已关注"
-      watched_categories_instructions: "您将自动关注这些板块中的所有话题。您会收到所有新帖子和话题的通知，话题旁还会显示新帖子的数量。"
+      watched_categories_instructions: "您将自动关注这些版块中的所有话题。您会收到所有新帖子和话题的通知，话题旁还会显示新帖子的数量。"
       tracked_categories: "已跟踪"
-      tracked_categories_instructions: "您将自动跟踪这些板块中的所有话题。新帖子的数量将显示在话题旁边。"
+      tracked_categories_instructions: "您将自动跟踪这些版块中的所有话题。新帖子的数量将显示在话题旁边。"
       watched_first_post_categories: "关注第一个帖子"
-      watched_first_post_categories_instructions: "您将收到这些板块中每个新话题的第一个帖子的通知。"
+      watched_first_post_categories_instructions: "您将收到这些版块中每个新话题的第一个帖子的通知。"
       watched_first_post_tags: "关注第一个帖子"
       watched_first_post_tags_instructions: "您将收到带有这些标签的每个新话题的第一个帖子的通知。"
-      watched_precedence_over_muted: "如果我正在关注的板块或标签中有我已设为免打扰的话题，请通知我。"
+      watched_precedence_over_muted: "如果我正在关注的版块或标签中有我已设为免打扰的话题，请通知我。"
       muted_categories: "已设为免打扰"
-      muted_categories_instructions: "您不会收到有关这些板块中新话题的任何通知，它们也不会出现在板块或最新话题页面上。"
-      muted_categories_instructions_dont_hide: "您不会收到有关这些板块中新话题的任何通知。"
+      muted_categories_instructions: "您不会收到有关这些版块中新话题的任何通知，它们也不会出现在版块或最新话题页面上。"
+      muted_categories_instructions_dont_hide: "您不会收到有关这些版块中新话题的任何通知。"
       regular_categories: "常规"
-      regular_categories_instructions: "您将在“最新”和“热门”话题列表中看到这些板块。"
-      no_category_access: "作为版主，您具有有限的板块访问权限，保存已被禁用。"
+      regular_categories_instructions: "您将在“最新”和“热门”话题列表中看到这些版块。"
+      no_category_access: "作为版主，您具有有限的版块访问权限，保存已被禁用。"
       delete_account: "删除我的帐户"
       delete_account_confirm: "确定要永久删除您的帐户吗？此操作无法撤消！"
       deleted_yourself: "您的帐户已被成功删除。"
@@ -1254,7 +1254,7 @@ zh_CN:
         emails: "电子邮件"
         notifications: "通知"
         tracking: "跟踪"
-        categories: "板块"
+        categories: "版块"
         users: "用户"
         tags: "标签"
         interface: "界面"
@@ -1518,7 +1518,7 @@ zh_CN:
         every_month: "每月"
         every_six_months: "每六个月"
       email_level:
-        title: "当我被引用、回复、我的用户名被提及 (@) 或当我关注的板块、标签或话题有新的活动时给我发送电子邮件"
+        title: "当我被引用、回复、我的用户名被提及 (@) 或当我关注的版块、标签或话题有新的活动时给我发送电子邮件"
         always: "始终"
         only_when_away: "只在离开时"
         never: "从不"
@@ -1526,7 +1526,7 @@ zh_CN:
       include_tl0_in_digests: "在总结电子邮件中包含来自新用户的内容"
       email_in_reply_to: "在电子邮件中包含帖子回复节选"
       other_settings: "其他"
-      categories_settings: "板块"
+      categories_settings: "版块"
       topics_settings: "话题"
       new_topic_duration:
         label: "何时视为新话题"
@@ -1685,7 +1685,7 @@ zh_CN:
         most_liked_users: "赞最多"
         most_replied_to_users: "最多回复至"
         no_likes: "暂无赞。"
-        top_categories: "热门板块"
+        top_categories: "热门版块"
         topics: "话题"
         replies: "回复"
       ip_address:
@@ -1737,7 +1737,7 @@ zh_CN:
         content: "点击三个点，看看您还能如何与帖子互动！"
       topic_notification_levels:
         title: "您现在正在关注此话题"
-        content: "查找此铃声来调整您对特定话题或整个板块的通知偏好设置。"
+        content: "查找此铃声来调整您对特定话题或整个版块的通知偏好设置。"
       suggested_topics:
         title: "继续阅读！"
         content: "下面是我们认为您接下来可能想要阅读的一些话题。"
@@ -1994,14 +1994,14 @@ zh_CN:
       google_classic: "Google Classic"
       facebook_messenger: "Facebook Messenger"
     category_page_style:
-      categories_only: "仅板块"
-      categories_with_featured_topics: "包含精选话题的板块"
-      categories_and_latest_topics: "板块和最新话题"
-      categories_and_latest_topics_created_date: "板块和最新话题（按话题创建日期排序）"
-      categories_and_top_topics: "板块和热门话题"
-      categories_boxes: "带子板块的框"
+      categories_only: "仅版块"
+      categories_with_featured_topics: "包含精选话题的版块"
+      categories_and_latest_topics: "版块和最新话题"
+      categories_and_latest_topics_created_date: "版块和最新话题（按话题创建日期排序）"
+      categories_and_top_topics: "版块和热门话题"
+      categories_boxes: "带子版块的框"
       categories_boxes_with_topics: "带精选话题的框"
-      subcategories_with_featured_topics: "包含精选话题的子板块"
+      subcategories_with_featured_topics: "包含精选话题的子版块"
     shortcut_modifier_key:
       shift: "Shift"
       ctrl: "Ctrl"
@@ -2011,7 +2011,7 @@ zh_CN:
       loading: 加载…
     category_row:
       topic_count:
-        other: "此板块下有 %{count} 个话题"
+        other: "此版块下有 %{count} 个话题"
     select_kit:
       delete_item: "删除 %{name}"
       filter_by: "筛选条件：%{name}"
@@ -2031,7 +2031,7 @@ zh_CN:
         tag_drop:
           filter_for_more: 筛选更多…
         categories_admin_dropdown:
-          title: "管理板块"
+          title: "管理版块"
     date_time_picker:
       from: 从
       to: 至
@@ -2057,7 +2057,7 @@ zh_CN:
     shared_drafts:
       title: "共享草稿"
       notice: "此话题只对可以发布共享草稿的用户可见。"
-      destination_category: "目标板块"
+      destination_category: "目标版块"
       publish: "发布共享草稿"
       confirm_publish: "确定要发布此草稿吗？"
       publishing: "发布话题…"
@@ -2083,7 +2083,7 @@ zh_CN:
       group_mentioned:
         other: "提及 %{group} 时，您将通知 <a href='%{group_link}'>%{count} 人</a> － 确定吗？"
       cannot_see_mention:
-        category: "您提及了 @%{username}，但该用户无法访问此板块，因此不会收到通知。您需要将其添加到可以访问此板块的群组中。"
+        category: "您提及了 @%{username}，但该用户无法访问此版块，因此不会收到通知。您需要将其添加到可以访问此版块的群组中。"
         private: "您提及了 @%{username}，但该用户无法访问此个人消息，因此不会收到通知。您需要邀请该用户加入此个人消息。"
         muted_topic: "您提及了 @%{username}，但该用户已将此话题设为免打扰，因此不会收到通知。"
         not_allowed: "您提及了 @%{username}，但该用户未被邀请加入此话题，因此不会收到通知。"
@@ -2107,7 +2107,7 @@ zh_CN:
         post_length:
           other: "帖子必须至少为 %{count} 个字符"
         try_like: "您尝试过 %{heart} 按钮了吗？"
-        category_missing: "您必须选择一个板块"
+        category_missing: "您必须选择一个版块"
         tags_missing:
           other: "您必须至少选择 %{count} 个标签"
         topic_template_not_modified: "请通过编辑话题模板为您的话题添加详细信息和细节。"
@@ -2129,7 +2129,7 @@ zh_CN:
       remove_featured_link: "从话题中移除链接。"
       reply_placeholder: "在此处输入。使用 Markdown、BBCode 或 HTML 进行格式化。拖动或粘贴图片。"
       reply_placeholder_no_images: "在此处输入。使用 Markdown、BBCode 或 HTML 进行格式化。"
-      reply_placeholder_choose_category: "先选择一个板块，然后在此处输入。"
+      reply_placeholder_choose_category: "先选择一个版块，然后在此处输入。"
       view_new_post: "查看您的新帖子。"
       saving: "正在保存"
       saved: "已保存！"
@@ -2358,7 +2358,7 @@ zh_CN:
       search_google_button: "Google"
       search_button: "搜索"
       search_term_label: "输入搜索关键字"
-      categories: "板块"
+      categories: "版块"
       tags: "标签"
       in: "位置"
       in_this_topic: "在此话题中"
@@ -2375,16 +2375,16 @@ zh_CN:
       type:
         default: "话题/帖子"
         users: "用户"
-        categories: "板块"
-        categories_and_tags: "板块/标签"
+        categories: "版块"
+        categories_and_tags: "版块/标签"
       context:
         user: "搜索 @%{username} 的帖子"
-        category: "搜索 #%{category} 板块"
+        category: "搜索 #%{category} 版块"
         tag: "搜索 #%{tag} 标签"
         topic: "搜索此话题"
         private_messages: "搜索消息"
       tips:
-        category_tag: "按板块或标签筛选"
+        category_tag: "按版块或标签筛选"
         author: "按帖子作者筛选"
         in: "按元数据（例如：in:title、in:personal、in:pinned）筛选"
         status: "按话题状态筛选"
@@ -2536,13 +2536,13 @@ zh_CN:
           other: "忽略新话题（%{count} 个）…"
         toggle: "切换话题批量选择"
         actions: "批量操作"
-        change_category: "设置板块…"
+        change_category: "设置版块…"
         close_topics: "关闭话题"
         archive_topics: "归档话题"
         move_messages_to_inbox: "移至收件箱"
         notification_level: "通知…"
         change_notification_level: "更改通知级别"
-        choose_new_category: "为话题选择新板块："
+        choose_new_category: "为话题选择新版块："
         selected:
           other: "您已选择 <b>%{count}</b> 个话题。"
         change_tags: "替换标签"
@@ -2586,7 +2586,7 @@ zh_CN:
       filter_to:
         other: "话题中的 %{count} 个帖子"
       create: "新建话题"
-      create_disabled_category: "您无权在此板块中创建话题"
+      create_disabled_category: "您无权在此版块中创建话题"
       create_long: "创建新话题"
       open_draft: "打开草稿"
       private_message: "开始消息"
@@ -2627,7 +2627,7 @@ zh_CN:
       collapse_details: "收起话题详细信息"
       expand_details: "展开话题详细信息"
       read_more_in_category: "想阅读更多？请浏览%{categoryLink}中的其他话题或<a href='%{latestLink}'>查看最新话题</a>。"
-      read_more: "想阅读更多？请<a href='%{categoryLink}'>浏览所有板块</a>或<a href='%{latestLink}'>查看最新话题</a>。"
+      read_more: "想阅读更多？请<a href='%{categoryLink}'>浏览所有版块</a>或<a href='%{latestLink}'>查看最新话题</a>。"
       unread_indicator: "还没有成员读过此话题的最新帖子。"
       participant_groups: "参与者群组"
       read_more_MF: |
@@ -2661,8 +2661,8 @@ zh_CN:
         }
       created_at: "已创建： %{date}"
       bumped_at: "最新：%{date}"
-      browse_all_categories_latest: "<a href='%{basePath}/categories'>浏览所有板块</a>或<a href='%{basePath}/latest'>查看最新话题</a>。"
-      browse_all_categories_latest_or_top: "<a href='%{basePath}/categories'>浏览所有板块</a>、<a href='%{basePath}/latest'>查看最新话题</a>或查看热门话题："
+      browse_all_categories_latest: "<a href='%{basePath}/categories'>浏览所有版块</a>或<a href='%{basePath}/latest'>查看最新话题</a>。"
+      browse_all_categories_latest_or_top: "<a href='%{basePath}/categories'>浏览所有版块</a>、<a href='%{basePath}/latest'>查看最新话题</a>或查看热门话题："
       browse_all_tags_or_latest: "<a href='%{basePath}/tags'>浏览所有标签</a>或<a href='%{basePath}/latest'>查看最新话题</a>。"
       suggest_create_topic: 准备好<a href>开始新对话</a>了吗？
       jump_reply: "跳转到帖子的原始位置"
@@ -2760,20 +2760,20 @@ zh_CN:
           mailing_list_mode: "您已启用邮寄名单模式，因此您将通过电子邮件收到对此话题回复的通知。"
           "3_10": "由于您正在关注此话题的一个标签，您将收到通知。"
           "3_10_stale": "由于您过去关注过此话题的一个标签，您将收到通知。"
-          "3_6": "由于您正在关注此板块，您将收到通知。"
-          "3_6_stale": "由于您过去关注过此板块，您将收到通知。"
+          "3_6": "由于您正在关注此版块，您将收到通知。"
+          "3_6_stale": "由于您过去关注过此版块，您将收到通知。"
           "3_5": "由于您已开始自动关注此话题，您将收到通知。"
           "3_2": "由于您正在关注此话题，您将收到通知。"
           "3_1": "由于您创建了此话题，您将收到通知。"
           "3": "由于您正在关注此话题，您将收到通知。"
-          "2_8": "由于您正在跟踪此板块，您将看到新回复的数量。"
-          "2_8_stale": "由于您过去跟踪过此板块，您将看到新回复的数量。"
+          "2_8": "由于您正在跟踪此版块，您将看到新回复的数量。"
+          "2_8_stale": "由于您过去跟踪过此版块，您将看到新回复的数量。"
           "2_4": "由于您发表过对此话题的回复，您将看到新回复的数量。"
           "2_2": "由于您正在跟踪此话题，您将看到新回复的数量。"
           "2": '由于您<a href="%{basePath}/u/%{username}/preferences/notifications">阅读过此话题</a>，您将看到新回复的数量。'
           "1_2": "您会在别人 @ 您或回复您时收到通知。"
           "1": "您会在别人 @ 您或回复您时收到通知。"
-          "0_7": "您将忽略此板块中的所有通知。"
+          "0_7": "您将忽略此版块中的所有通知。"
           "0_2": "您将忽略有关此话题的所有通知。"
           "0": "您将忽略有关此话题的所有通知。"
         watching_pm:
@@ -2846,12 +2846,12 @@ zh_CN:
         success_message: "您已成功举报此话题。"
       make_public:
         title: "转换为公开话题"
-        choose_category: "请为公开话题选择板块："
+        choose_category: "请为公开话题选择版块："
       feature_topic:
         title: "将此话题设为精选"
-        pin: "将此话题置于%{categoryLink}板块顶部至"
-        unpin: "将此话题从%{categoryLink}板块顶部移除。"
-        unpin_until: "将此话题从%{categoryLink}板块顶部移除，或等到<strong>%{until}</strong>。"
+        pin: "将此话题置于%{categoryLink}版块顶部至"
+        unpin: "将此话题从%{categoryLink}版块顶部移除。"
+        unpin_until: "将此话题从%{categoryLink}版块顶部移除，或等到<strong>%{until}</strong>。"
         pin_note: "用户可以为自己单独取消置顶话题。"
         pin_validation: "置顶此话题需要一个日期。"
         not_pinned: "%{categoryLink}没有置顶话题。"
@@ -3224,22 +3224,22 @@ zh_CN:
         title: "分享帖子 #%{post_number}"
         instructions: "分享此帖子的链接："
     category:
-      none: "（无板块）"
-      all: "所有板块"
-      choose: "板块&hellip;"
+      none: "（无版块）"
+      all: "所有版块"
+      choose: "版块&hellip;"
       edit: "编辑"
-      edit_title: "编辑此板块"
+      edit_title: "编辑此版块"
       edit_dialog_title: "编辑: %{categoryName}"
-      view: "查看板块中的话题"
-      back: "返回板块"
+      view: "查看版块中的话题"
+      back: "返回版块"
       general: "常规"
       settings: "设置"
       topic_template: "模板"
       tags: "标签"
-      tags_allowed_tags: "将这些标签限制在此板块："
-      tags_allowed_tag_groups: "将这些标签组限制在此板块："
+      tags_allowed_tags: "将这些标签限制在此版块："
+      tags_allowed_tag_groups: "将这些标签组限制在此版块："
       tags_placeholder: "（可选）允许的标签列表"
-      tags_tab_description: "上面指定的标签和标签组将仅在此板块和也指定它们的其他板块中可用。它们将无法用于其他板块。"
+      tags_tab_description: "上面指定的标签和标签组将仅在此版块和也指定它们的其他版块中可用。它们将无法用于其他版块。"
       tag_groups_placeholder: "（可选）允许的标签组列表"
       manage_tag_groups_link: "管理标签组"
       allow_global_tags_label: "也允许其他标签"
@@ -3248,32 +3248,32 @@ zh_CN:
         delete: "删除"
         add: "添加所需标签组"
         placeholder: "选择标签组…"
-      topic_featured_link_allowed: "在此板块中允许精选链接"
-      delete: "删除板块"
-      create: "新建板块"
-      create_long: "创建新板块"
-      save: "保存板块"
-      slug: "板块缩略名"
+      topic_featured_link_allowed: "在此版块中允许精选链接"
+      delete: "删除版块"
+      create: "新建版块"
+      create_long: "创建新版块"
+      save: "保存版块"
+      slug: "版块缩略名"
       slug_placeholder: "（可选）用于 URL 以“-”分隔的字词"
-      creation_error: 创建板块时出错。
-      save_error: 保存板块时出错。
-      name: "板块名称"
+      creation_error: 创建版块时出错。
+      save_error: 保存版块时出错。
+      name: "版块名称"
       description: "描述"
-      logo: "板块徽标图片"
-      logo_dark: "深色模式板块徽标图片"
-      background_image: "板块背景图片"
-      background_image_dark: "深色板块背景图像"
+      logo: "版块徽标图片"
+      logo_dark: "深色模式版块徽标图片"
+      background_image: "版块背景图片"
+      background_image_dark: "深色版块背景图像"
       badge_colors: "徽章颜色"
       background_color: "背景色"
       foreground_color: "前景色"
       name_placeholder: "应该简明扼要"
       color_placeholder: "任意网页颜色"
-      delete_confirm: "确定要删除此板块吗？"
-      delete_error: "删除板块时出错。"
-      list: "列出板块"
-      no_description: "请为此板块添加描述。"
+      delete_confirm: "确定要删除此版块吗？"
+      delete_error: "删除版块时出错。"
+      list: "列出版块"
+      no_description: "请为此版块添加描述。"
       change_in_category_topic: "编辑描述"
-      already_used: "此颜色已被其他板块使用"
+      already_used: "此颜色已被其他版块使用"
       security: "安全性"
       security_add_group: "添加群组"
       permissions:
@@ -3281,65 +3281,65 @@ zh_CN:
         see: "查看"
         reply: "回复"
         create: "创建"
-        no_groups_selected: "没有群组被授予访问权限；此板块仅对管理人员可见。"
-        everyone_has_access: '此板块是公开的，任何人都可以查看、回复和创建帖子。要限制权限，请移除授予“所有人”组的一个或多个权限。'
+        no_groups_selected: "没有群组被授予访问权限；此版块仅对管理人员可见。"
+        everyone_has_access: '此版块是公开的，任何人都可以查看、回复和创建帖子。要限制权限，请移除授予“所有人”组的一个或多个权限。'
         toggle_reply: "切换回复权限"
         toggle_full: "切换创建权限"
         inherited: '此权限继承自“所有人”'
-      special_warning: "警告：此板块是一个预设板块，无法编辑安全性设置。如果您不想使用此板块，请将其删除，而不是重新调整用途。"
-      uncategorized_security_warning: "此板块比较特殊。它旨在作为没有板块的话题的存放区域；不能有安全性设置。"
-      uncategorized_general_warning: '此板块比较特殊。它用作未选择板块的新话题的默认板块。如果您想要避免此行为并强制选择板块，<a href="%{settingLink}">请在此处禁用该设置</a>。如果您想要更改其名称或描述，请转到<a href="%{customizeLink}">自定义/文本内容</a>。'
-      pending_permission_change_alert: "您还没有将 %{group} 添加到此板块；点击此按钮添加它们。"
+      special_warning: "警告：此版块是一个预设版块，无法编辑安全性设置。如果您不想使用此版块，请将其删除，而不是重新调整用途。"
+      uncategorized_security_warning: "此版块比较特殊。它旨在作为没有版块的话题的存放区域；不能有安全性设置。"
+      uncategorized_general_warning: '此版块比较特殊。它用作未选择版块的新话题的默认版块。如果您想要避免此行为并强制选择版块，<a href="%{settingLink}">请在此处禁用该设置</a>。如果您想要更改其名称或描述，请转到<a href="%{customizeLink}">自定义/文本内容</a>。'
+      pending_permission_change_alert: "您还没有将 %{group} 添加到此版块；点击此按钮添加它们。"
       images: "图片"
       email_in: "自定义传入电子邮件地址："
       email_in_tooltip: "您可以使用 | 字符分隔多个电子邮件地址。"
       email_in_allow_strangers: "接受来自没有帐户的匿名用户的电子邮件"
       email_in_disabled: "通过电子邮件发布新话题已被禁用。要启用通过电子邮件发布新话题，请启用 <a href='%{setting_url}'>'email in'</a> 设置。"
-      mailinglist_mirror: "板块镜像一个邮寄名单"
-      show_subcategory_list: "在此板块中的话题上方显示子板块列表。"
-      read_only_banner: "用户无法在此板块中创建话题时的横幅文本："
-      num_featured_topics: "板块页面上显示的话题数："
-      subcategory_num_featured_topics: "父板块页面上的精选话题数量："
+      mailinglist_mirror: "版块镜像一个邮寄名单"
+      show_subcategory_list: "在此版块中的话题上方显示子版块列表。"
+      read_only_banner: "用户无法在此版块中创建话题时的横幅文本："
+      num_featured_topics: "版块页面上显示的话题数："
+      subcategory_num_featured_topics: "父版块页面上的精选话题数量："
       all_topics_wiki: "默认将新话题设为 Wiki"
       allow_unlimited_owner_edits_on_first_post: "允许所有者不受限制地编辑第一个帖子"
-      subcategory_list_style: "子板块列表样式："
+      subcategory_list_style: "子版块列表样式："
       sort_order: "话题列表排序依据："
       default_view: "默认话题列表："
       default_top_period: "默认热门时长："
       default_list_filter: "默认列表筛选器："
-      allow_badges_label: "允许在此板块中授予徽章"
+      allow_badges_label: "允许在此版块中授予徽章"
       edit_permissions: "编辑权限"
-      reviewable_by_group: "除管理人员外，此板块中的内容还可以由以下群组审核："
+      reviewable_by_group: "除管理人员外，此版块中的内容还可以由以下群组审核："
       review_group_name: "群组名称"
       require_topic_approval: "所有新话题都需要版主审批"
       require_reply_approval: "所有新回复都需要版主审批"
       this_year: "今年"
-      position: "板块页面上的位置："
+      position: "版块页面上的位置："
       default_position: "默认位置"
-      position_disabled: "板块将按活动顺序显示。要控制列表中板块的顺序，请启用<a href='%{url}'>固定板块位置</a>设置。"
+      position_disabled: "版块将按活动顺序显示。要控制列表中版块的顺序，请启用<a href='%{url}'>固定版块位置</a>设置。"
       minimum_required_tags: "话题中所需的最少标签数："
-      default_slow_mode: '为此板块中的新话题启用“慢速模式”。'
-      parent: "父板块"
+      default_slow_mode: '为此版块中的新话题启用“慢速模式”。'
+      parent: "父版块"
       num_auto_bump_daily: "每天自动顶贴的开放话题的数量："
       auto_bump_cooldown_days: "再次提升同一话题之前的最短天数。"
       navigate_to_first_post_after_read: "阅读话题后导航到第一个帖子"
       notifications:
-        title: "更改此板块的通知级别"
+        title: "更改此版块的通知级别"
         watching:
           title: "关注"
-          description: "您将自动关注此板块中的所有话题。您会收到每个话题中每个新帖子的通知，并且会显示新回复数量。"
+          description: "您将自动关注此版块中的所有话题。您会收到每个话题中每个新帖子的通知，并且会显示新回复数量。"
         watching_first_post:
           title: "关注第一个帖子"
-          description: "您将收到此板块中新话题的通知，但不会收到话题回复。"
+          description: "您将收到此版块中新话题的通知，但不会收到话题回复。"
         tracking:
           title: "跟踪"
-          description: "您将自动跟踪此板块中的所有话题。您会在别人 @ 您或回复您时收到通知，并且会显示新回复数量。"
+          description: "您将自动跟踪此版块中的所有话题。您会在别人 @ 您或回复您时收到通知，并且会显示新回复数量。"
         regular:
           title: "常规"
           description: "您会在别人 @ 您或回复您时收到通知。"
         muted:
           title: "已设为免打扰"
-          description: "您不会收到有关此板块中新话题的任何通知，它们也不会出现在最新话题页面上。"
+          description: "您不会收到有关此版块中新话题的任何通知，它们也不会出现在最新话题页面上。"
       search_priority:
         label: "搜索优先级"
         options:
@@ -3357,7 +3357,7 @@ zh_CN:
         posts: "帖子"
         activity: "活动"
         posters: "发帖人"
-        category: "板块"
+        category: "版块"
         created: "创建日期"
       sort_ascending: "升序"
       sort_descending: "降序"
@@ -3373,7 +3373,7 @@ zh_CN:
         email: "电子邮件"
       list_filters:
         all: "所有话题"
-        none: "无子板块"
+        none: "无子版块"
       colors_disabled: "您无法选择颜色，因为您的“category style”为“none”。"
     flagging:
       title: "感谢您帮助我们建设文明社区！"
@@ -3448,10 +3448,10 @@ zh_CN:
         help: "此话题已对您取消置顶；它将以常规顺序显示"
       pinned_globally:
         title: "已全站置顶"
-        help: "此话题已被全站置顶；它将显示在最新话题列表及其所属板块的顶部"
+        help: "此话题已被全站置顶；它将显示在最新话题列表及其所属版块的顶部"
       pinned:
         title: "已置顶"
-        help: "此话题已对您置顶；它将显示在所属板块的顶部"
+        help: "此话题已对您置顶；它将显示在所属版块的顶部"
       unlisted:
         help: "此话题已被取消公开；它不会显示在话题列表中，只能通过直接链接访问"
       personal_message:
@@ -3487,13 +3487,13 @@ zh_CN:
     users: "用户"
     users_lowercase:
       other: "用户"
-    category_title: "板块"
+    category_title: "版块"
     history_capped_revisions: "历史记录，最近 100 次修订"
     history: "历史记录"
     raw_email:
       title: "传入电子邮件"
       not_available: "不可用！"
-    categories_list: "板块列表"
+    categories_list: "版块列表"
     filters:
       with_topics: "%{filter}话题"
       with_category: "%{filter}%{category}话题"
@@ -3510,9 +3510,9 @@ zh_CN:
         title: "已读"
         help: "您已读过的话题，按您上次阅读它们的顺序排序"
       categories:
-        title: "板块"
-        title_in: "板块 - %{categoryName}"
-        help: "按板块分组的所有话题"
+        title: "版块"
+        title_in: "版块 - %{categoryName}"
+        help: "按版块分组的所有话题"
       unread:
         title: "未读"
         title_with_count:
@@ -3548,7 +3548,7 @@ zh_CN:
         title: "%{categoryName}"
         title_with_count:
           other: "%{categoryName} (%{count})"
-        help: "%{categoryName}板块中的最新话题"
+        help: "%{categoryName}版块中的最新话题"
       top:
         title: "热门"
         help: "过去一年、一个月、一周或一天中最活跃的话题"
@@ -3614,7 +3614,7 @@ zh_CN:
         latest: "%{shortcut} 最新"
         new: "%{shortcut} 新"
         unread: "%{shortcut} 未读"
-        categories: "%{shortcut} 板块"
+        categories: "%{shortcut} 版块"
         top: "%{shortcut} 热门"
         bookmarks: "%{shortcut} 书签"
         profile: "%{shortcut} 个人资料"
@@ -3744,16 +3744,16 @@ zh_CN:
       choose_for_topic_required_group:
         other: "从 '%{name}' 中选择 %{count} 个标签…"
       info: "信息"
-      default_info: "此标签不限于任何板块，并且没有同义词。"
+      default_info: "此标签不限于任何版块，并且没有同义词。"
       staff_info: "要添加限制，请将此标签放入<a href=%{basePath}/tag_groups>标签组</a>。"
-      category_restricted: "此标签仅限于您无权访问的板块。"
+      category_restricted: "此标签仅限于您无权访问的版块。"
       synonyms: "同义词"
       synonyms_description: "使用以下标签时，它们将被替换为 <b>%{base_tag_name}</b>。"
       save: "保存标签的名称和描述"
       tag_groups_info:
         other: "此标签属于以下组：%{tag_groups}。"
       category_restrictions:
-        other: "它只能用于以下板块："
+        other: "它只能用于以下版块："
       edit_synonyms: "编辑同义词"
       add_synonyms_label: "添加同义词："
       add_synonyms: "添加"
@@ -3881,7 +3881,7 @@ zh_CN:
       unsupported_file_picked: "您选择了不受支持的文件。支持的文件类型 – %{types}。"
     user_activity:
       no_activity_title: "尚无活动"
-      no_activity_body: "欢迎来到我们的社区！作为新人，您还未参与过讨论。第一步，请访问<a href='%{topUrl}'>热门</a>或<a href='%{categoriesUrl}'>板块</a>并开始阅读！在您喜欢或想详细了解的帖子上选择 %{heartIcon} 。在您参与后，您的活动将被列在此处。"
+      no_activity_body: "欢迎来到我们的社区！作为新人，您还未参与过讨论。第一步，请访问<a href='%{topUrl}'>热门</a>或<a href='%{categoriesUrl}'>版块</a>并开始阅读！在您喜欢或想详细了解的帖子上选择 %{heartIcon} 。在您参与后，您的活动将被列在此处。"
       no_replies_title: "您还没有回复任何话题"
       no_replies_title_others: "%{username} 还没有回复任何话题"
       no_replies_body: "当您<a href='%{searchUrl}'>发现</a>一个您希望参与的有趣对话时，请直接按任何帖子下方的<kbd>回复</kbd>按钮开始回复该特定帖子。或者，如果您希望回复一般话题而不是任何帖子或个人，请在话题最底部或话题时间线下方查找<kbd>回复</kbd>按钮。"
@@ -3891,10 +3891,10 @@ zh_CN:
       no_likes_title_others: "%{username} 还没有赞过任何话题"
       no_likes_body: "加入并开始贡献的一个好方法是开始阅读已经发生的对话，然后在您喜欢的帖子上选择 %{heartIcon}！"
       no_topics_title: "您还没有开始任何话题"
-      no_topics_body: "在开始新的话题之前，最好先<a href='%{searchUrl}'>搜索</a>对话的现有话题，但如果您确信您想要的话题还没有出现，那就开始一个属于您自己的新话题吧。查找话题列表、板块或标签右上角的 <kbd>+ 新建话题</kbd>按钮，开始在该领域创建新话题。"
+      no_topics_body: "在开始新的话题之前，最好先<a href='%{searchUrl}'>搜索</a>对话的现有话题，但如果您确信您想要的话题还没有出现，那就开始一个属于您自己的新话题吧。查找话题列表、版块或标签右上角的 <kbd>+ 新建话题</kbd>按钮，开始在该领域创建新话题。"
       no_topics_title_others: "%{username} 还没有开始任何话题"
       no_read_topics_title: "您还没有阅读任何话题。"
-      no_read_topics_body: "开始阅读讨论后，您会在此处看到一个列表。要开始阅读，请在<a href='%{topUrl}'>热门</a>或<a href='%{categoriesUrl}'>板块</a>中或者通过关键字搜索 %{searchIcon}，查找您感兴趣的话题"
+      no_read_topics_body: "开始阅读讨论后，您会在此处看到一个列表。要开始阅读，请在<a href='%{topUrl}'>热门</a>或<a href='%{categoriesUrl}'>版块</a>中或者通过关键字搜索 %{searchIcon}，查找您感兴趣的话题"
     no_group_messages_title: "未找到群组消息"
     topic_entrance:
       sr_jump_top_button: "跳到第一个帖子"
@@ -3913,14 +3913,14 @@ zh_CN:
         other: "%{count} 新"
       toggle_section: "切换版块"
       more: "更多"
-      all_categories: "所有板块"
+      all_categories: "所有版块"
       all_tags: "所有标签"
       categories_form_modal:
-        title: "编辑板块导航"
+        title: "编辑版块导航"
         subtitle:
-          text: "我们将自动显示此站点最受欢迎的板块"
-        filter_placeholder: "筛选板块"
-        no_categories: "没有与给定术语匹配的板块。"
+          text: "我们将自动显示此站点最受欢迎的版块"
+        filter_placeholder: "筛选版块"
+        no_categories: "没有与给定术语匹配的版块。"
       tags_form_modal:
         title: "编辑标签导航"
         filter_placeholder: "筛选标签"
@@ -3990,10 +3990,10 @@ zh_CN:
           header_action_title: "编辑边栏标签"
           configure_defaults: "配置默认值"
         categories:
-          none: "您还没有添加任何板块。"
+          none: "您还没有添加任何版块。"
           click_to_get_started: "点击此处开始。"
-          header_link_text: "板块"
-          header_action_title: "编辑边栏板块"
+          header_link_text: "版块"
+          header_action_title: "编辑边栏版块"
           configure_defaults: "配置默认值"
         community:
           edit_section:
@@ -4178,9 +4178,9 @@ zh_CN:
             group:
               label: 群组
             category:
-              label: 板块
+              label: 版块
             include_subcategories:
-              label: "包括子板块"
+              label: "包括子版块"
       groups:
         new:
           title: "新群组"
@@ -4304,10 +4304,10 @@ zh_CN:
             topics:
               read: 阅读一个话题或其中的一个帖子。也支持 RSS。
               write: 创建一个新话题或发布到现有话题。
-              update: 更新话题。更改标题、板块、标签、状态、模式、精选链接等。
+              update: 更新话题。更改标题、版块、标签、状态、模式、精选链接等。
               delete: 删除话题。
               read_lists: 阅读诸如热门、新、最新等话题列表。也支持 RSS。
-              status: "更新话题的状态。状态：已关闭、归档、可见已置顶。启用：true、false。在此处和请求负载中指定 category_id，以仅允许该板块中话题的状态更改。"
+              status: "更新话题的状态。状态：已关闭、归档、可见已置顶。启用：true、false。在此处和请求负载中指定 category_id，以仅允许该版块中话题的状态更改。"
             posts:
               edit: 编辑任意帖子或特定帖子。
               delete: 删除帖子。
@@ -4320,8 +4320,8 @@ zh_CN:
               create: 创建标签组。
               update: 更新由 id 指定的标签组。
             categories:
-              list: 获取板块列表。
-              show: 通过 id 获取单个板块。
+              list: 获取版块列表。
+              show: 通过 id 获取单个版块。
             uploads:
               create: 上传新文件或启动单部分或多部分直接上传到外部存储。
             users:
@@ -4387,8 +4387,8 @@ zh_CN:
         verify_certificate: "检查有效负载 URL 的 TLS 证书"
         active: "有效"
         active_notice: "当事件发生时，我们会推送详细信息。"
-        categories_filter_instructions: "只有当事件与指定板块相关时，才会触发相关的网络钩子。留空将触发所有板块的网络钩子。"
-        categories_filter: "触发的板块"
+        categories_filter_instructions: "只有当事件与指定版块相关时，才会触发相关的网络钩子。留空将触发所有版块的网络钩子。"
+        categories_filter: "触发的版块"
         tags_filter_instructions: "只有当事件与指定标签相关时，才会触发相关的网络钩子。留空将触发所有标签的网络钩子。"
         tags_filter: "触发的标签"
         groups_filter_instructions: "只有当事件与指定群组相关时，才会触发相关的网络钩子。留空将触发所有群组的网络钩子。"
@@ -4418,10 +4418,10 @@ zh_CN:
           tag_updated: "标签被更新"
           tag_destroyed: "标签被删除"
         category_event:
-          group_name: "板块事件"
-          category_created: "板块被创建"
-          category_updated: "板块被更新"
-          category_destroyed: "板块被删除"
+          group_name: "版块事件"
+          category_created: "版块被创建"
+          category_updated: "版块被更新"
+          category_destroyed: "版块被删除"
         user_event:
           group_name: "用户事件"
           user_logged_in: "用户登录"
@@ -4947,7 +4947,7 @@ zh_CN:
         ip_address: "IP"
         topic_id: "话题 ID"
         post_id: "帖子 ID"
-        category_id: "板块 ID"
+        category_id: "版块 ID"
         delete: "删除"
         edit: "编辑"
         save: "保存"
@@ -4993,9 +4993,9 @@ zh_CN:
             impersonate: "模拟"
             anonymize_user: "对用户进行匿名化处理"
             roll_up: "汇总 IP 地址段"
-            change_category_settings: "更改板块设置"
-            delete_category: "删除板块"
-            create_category: "创建板块"
+            change_category_settings: "更改版块设置"
+            delete_category: "删除版块"
+            create_category: "创建版块"
             silence_user: "禁言用户"
             unsilence_user: "取消禁言用户"
             removed_silence_user: "禁言用户（已移除）"
@@ -5169,7 +5169,7 @@ zh_CN:
         list_table:
           headings:
             name: "名称"
-            active_categories: "有效板块"
+            active_categories: "有效版块"
             actions: "操作"
           actions:
             view: "查看模板"
@@ -5599,7 +5599,7 @@ zh_CN:
         title: "设置"
         no_results: "找不到结果。"
         more_site_setting_results:
-          other: "结果超过 %{count} 个。请优化您的搜索或选择一个板块。"
+          other: "结果超过 %{count} 个。请优化您的搜索或选择一个版块。"
         clear_filter: "清除"
         add_url: "添加 URL"
         add_host: "添加主机"
@@ -5765,7 +5765,7 @@ zh_CN:
         host: "允许的主机"
         allowed_paths: "路径许可名单"
         edit: "编辑"
-        category: "发布到板块"
+        category: "发布到版块"
         add_host: "添加主机"
         settings: "嵌入设置"
         crawling_settings: "抓取工具设置"
@@ -5787,8 +5787,8 @@ zh_CN:
         topic_title: "话题"
         post_id: "帖子 ID"
         post_title: "帖子"
-        category_id: "板块 ID"
-        category_title: "板块"
+        category_id: "版块 ID"
+        category_title: "版块"
         tag_name: "标签名称"
         external_url: "外部或相关 URL"
         destination: "目标"
@@ -5802,11 +5802,11 @@ zh_CN:
       reseed:
         action:
           label: "替换文本…"
-          title: "使用翻译替换板块和话题的文本"
+          title: "使用翻译替换版块和话题的文本"
         modal:
           title: "替换文本"
-          subtitle: "使用最新翻译替换系统生成的板块和话题的文本"
-          categories: "板块"
+          subtitle: "使用最新翻译替换系统生成的版块和话题的文本"
+          categories: "版块"
           topics: "话题"
           replace: "替换"
   wizard_js:
